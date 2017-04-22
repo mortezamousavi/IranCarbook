@@ -1,0 +1,13 @@
+E:\Fararayenh\Irancarbook\Irancarbook\DataLayer\bin\Release\DataLayer.dll.config
+E:\Fararayenh\Irancarbook\Irancarbook\DataLayer\bin\Release\DataLayer.dll
+E:\Fararayenh\Irancarbook\Irancarbook\DataLayer\bin\Release\DataLayer.pdb
+E:\Fararayenh\Irancarbook\Irancarbook\DataLayer\bin\Release\EntityFramework.dll
+E:\Fararayenh\Irancarbook\Irancarbook\DataLayer\bin\Release\EntityFramework.SqlServer.dll
+E:\Fararayenh\Irancarbook\Irancarbook\DataLayer\bin\Release\EntityFramework.SqlServerCompact.dll
+E:\Fararayenh\Irancarbook\Irancarbook\DataLayer\bin\Release\System.Data.SqlServerCe.dll
+E:\Fararayenh\Irancarbook\Irancarbook\DataLayer\bin\Release\EntityFramework.xml
+E:\Fararayenh\Irancarbook\Irancarbook\DataLayer\bin\Release\EntityFramework.SqlServer.xml
+E:\Fararayenh\Irancarbook\Irancarbook\DataLayer\bin\Release\EntityFramework.SqlServerCompact.xml
+E:\Fararayenh\Irancarbook\Irancarbook\DataLayer\obj\Release\DataLayer.csprojResolveAssemblyReference.cache
+E:\Fararayenh\Irancarbook\Irancarbook\DataLayer\obj\Release\DataLayer.dll
+E:\Fararayenh\Irancarbook\Irancarbook\DataLayer\obj\Release\DataLayer.pdb

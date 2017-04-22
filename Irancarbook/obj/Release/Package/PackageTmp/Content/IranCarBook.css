@@ -1,0 +1,573 @@
+﻿@font-face {
+  font-family: 'btitr';
+  src: url('/fonts/BTitrBold.eot?#') format('eot'),  /* IE6–8 */
+       url('/fonts/BTitrBold.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+       url('/fonts/BTitrBold.ttf') format('truetype');  /* Saf3—5, Chrome4+, FF3.5, Opera 10+ */
+}
+@font-face {
+  font-family: 'btraffic';
+  src: url('/fonts/BTraffic.eot?#') format('eot'),  /* IE6–8 */
+       url('/fonts/BTraffic.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+       url('/fonts/BTraffic.ttf') format('truetype');  /* Saf3—5, Chrome4+, FF3.5, Opera 10+ */
+}
+
+
+
+
+@font-face {
+    font-family: 'b_trafficregular';
+    src: url('/fonts/btraffic-webfont.eot');
+    src: url('/fonts/btraffic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/btraffic-webfont.woff2') format('woff2'),
+         url('/fonts/btraffic-webfont.woff') format('woff'),
+         url('/fonts/btraffic-webfont.ttf') format('truetype'),
+         url('/fonts/btraffic-webfont.svg#b_trafficregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+  font-family: 'bkodak';
+  src: url('/fonts/BKoodakBold.eot?#') format('eot'),  /* IE6–8 */
+       url('/fonts/BKoodakBold.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+       url('/fonts/BKoodakBold.ttf') format('truetype');  /* Saf3—5, Chrome4+, FF3.5, Opera 10+ */
+}
+@font-face {
+	font-family: 'NAZANINB';
+	src: url('/fonts/Nazanin.eot');
+	src: local('☺'), url('/fonts/Nazanin.woff') format('woff'), url('/fonts/Nazanin.ttf') format('truetype'), url('/fonts/Nazanin.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+  font-family: 'bzar';
+  src: url('/fonts/BZar.eot?#') format('eot'),  /* IE6–8 */
+       url('/fonts/BZar.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+       url('/fonts/BZar.ttf') format('truetype');  /* Saf3—5, Chrome4+, FF3.5, Opera 10+ */
+}
+@font-face {
+  font-family: 'byekan';
+  src: url('/fonts/BYekan.eot?#') format('eot'),  /* IE6–8 */
+       url('/fonts/BYekan.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+       url('/fonts/BYekan.ttf') format('truetype');  /* Saf3—5, Chrome4+, FF3.5, Opera 10+ */
+}
+body {
+    margin:0px;
+     font-family:"NAZANINB",Arial !important;
+    direction:rtl !important;
+    text-align:right !important;
+   /*overflow:hidden;*/
+   /*background-color:#FFCCFF;*/
+}
+.widget-title {
+    border-bottom-style: solid;
+    border-bottom-width: 3px;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    padding-bottom: 7px;
+    text-transform: uppercase;
+}
+ul.category li {
+    background-image: url("../img/category-link.png");
+    background-position: 0 7px;
+    background-repeat: no-repeat;
+    border-bottom: 1px solid #e1e1e1;
+    margin-bottom: 4px;
+    padding-bottom: 5px;
+    padding-left: 14px;
+}
+.mytitle{
+font-family:"btraffic",Arial !important;
+}
+.table {
+    font-family:"NAZANINB",Arial !important;
+    font-size:11pt;
+}
+.navbar-brand{
+     font-family:"NAZANINB",Arial !important;
+}
+.siteheader{
+    width:100%;
+    height:200px;
+    min-height:200px;
+    margin-top:1px;
+    margin-bottom:1px;
+    background-color:#FF66FF;
+}
+
+.logout{
+ height:195px;
+    min-height:252px;
+    margin-top:10px;
+    margin-bottom:10px;
+     margin-bottom: 10px;
+    margin-left: 2%;
+   background-color:#FFF5F5;
+      border: 2px solid #997a3d;
+    border-radius: 5px;
+
+}
+.logpan{
+    height:180px;
+    min-height:180px;
+    margin-top:30px;
+    margin-bottom:10px;
+     margin-bottom: 10px;
+    margin-left: 2%;
+   background-color:#FFF5F5;
+     -webkit-border-radius: 3px;
+   -moz-border-radius: 3px;
+   border-radius: 3px;
+   border:1px solid red;
+
+}
+.searchcss{
+    height:15%;
+    min-height:15%;
+    margin-top:1.2%;
+    margin-bottom:1.2%;
+}
+.sHead{
+    height:200px;
+    min-height:200px;
+    text-align:right;
+    background-color:yellow;
+}
+.formgrid{
+    height:400px;
+    min-height:400px;
+}
+.newscss{
+    height:330px;
+    margin-top:5px;
+    margin-right:2px;
+    margin-bottom:2px;
+    margin-left:1px;
+    background-color:#FF9933;
+}
+.ayeennameh{
+    height:30px;
+    min-height:30px;
+    background-color:#FF9999;
+}
+#search li{
+    padding-right:5px;
+}
+.standardcss{
+    float: right;
+    width:15%;
+     height: 500px; 
+     min-height: 500px; 
+     margin-top: 50px;
+      /*border:1px solid;*/
+      text-align:center;
+      margin-top:30px;
+      padding-top:15px;
+      background-color:#FFCC00;
+       -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+       border-radius: 4px;
+}
+.matlabcss{
+    float: left;
+     width: 100%; 
+       /*width: 80%;*/ 
+     height: 550px;
+      min-height: 550px; 
+      /*margin-top: 50px;*/ 
+      margin-right: 2%;
+      /*border: 1px solid;*/
+      /*margin-top:30px;*/
+      padding-top:15px;
+      margin-top:11px;
+      background-color:#FFCC00;
+     -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+       border-radius: 4px;
+
+}
+.login{
+    width:80%;
+    height:200px;
+    min-height:200px;
+    margin-left:10%;
+    margin-right:10%;
+    margin-top:5%;
+    margin-bottom:5%;
+    background-color:blue;
+}
+.loginpanel{
+    width:90%;
+    height:200px;
+    min-height:200px;
+    background-color:#FFF5F5;
+    margin-left:5%;
+    margin-right:5%;
+    -webkit-border-radius: 3px;
+   -moz-border-radius: 3px;
+   border-radius: 3px;
+}
+.loginbox{
+    width:50%;
+    float:right;
+    height:200px;
+}
+.logintext{
+    float:left;
+    padding-top:15px;
+    width:50%;
+    height:200px;
+    min-height:200px;
+}
+.footercss{
+    background-color:#808080;
+    color:white;
+    width:100%;
+    height:130px;
+    min-height:130px;
+    direction:rtl;
+    text-align:right;
+}
+.addressbox{
+    float:right;
+    width:80%;
+    height:110px;
+    min-height:110px;
+    margin-top:8px;
+    padding-right:12px;
+}
+  .myinfo{
+
+  }
+
+.faboutcss{
+    text-align:right;
+    margin-top:5px;
+    margin-right:2px;
+    padding-left:10px !important;
+    height:300px;
+    min-height:300px;
+    background-color:#66FFCC;
+    padding-right:1px !important;
+    margin-left: 40px;
+    font-family:"bnazanin",Arial;
+
+}
+.fkhadamat{
+    text-align:right;
+    margin-top:5px;
+    margin-right:2px;
+    font-family:"bnazanin",Arial;
+
+}
+.ejtemahicss{
+    float:left;
+    width:20%;
+     height:110px;
+      margin-top:8px;
+    min-height:110px;
+}
+.footercopy{
+    width:100%;
+    height:30px;
+    min-height:30px;
+    color:white;
+    padding-top:4px;
+    background-color:#2f3a67;
+    bottom:0px;
+    position:absolute;
+}
+.ejtemahicon{
+    width:100%;
+    padding-right:30%;
+    margin-top:25px;
+    margin-bottom:25px;
+    height:60px;
+    min-height:60px;
+   
+}
+.pagecounter{
+    width:90%;
+    margin-left:5%;
+    margin-right:5%;
+    background-color:white;
+}
+.Khheader{
+    direction:rtl;
+    font-family:"bkodak",Arial;
+    font-size:20pt;
+    height:70px;
+    min-height:38px;
+    margin-top:20px;
+}
+
+.fonter{
+    font-family:"btitr",Arial;
+    font-size:12pt;
+}
+.lan{
+     animation-name: beginNav;
+
+}
+@keyframes beginNav{
+    0%{opacity:0;}
+    50%{opacity:0.5}
+    100%{opacity:1}
+}
+.form-inline{
+    padding-right:2px !important;
+}
+.kala{
+    border:1px solid;
+    border-color:black;
+    height:200px;
+    margin-right:30px;
+    margin-left:2px;
+    margin-top:2px;
+    -webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+border-radius: 3px;
+}
+.listHead{
+    font-family:"btitr",Arial;
+    font-size:14pt;
+    margin-top:2px;
+}
+.Listpic{
+    height:70px;
+    margin-top:1px;
+}
+.pricelist{
+ font-family:"bzar",Arial;
+ font-size:14pt;
+  margin-top:36px;
+}
+.khlogo{
+    direction:ltr !important;
+    text-align:left !important;
+    padding-right:25px !important;
+    padding-left:3px !important;
+    padding-top:6px !important;
+}
+.khupcorner{
+    width:90%;
+    margin-left:5%;
+    margin-right:5%;
+    background-color:white;
+    height:132px;
+    margin-top:7px;
+   min-height:130px;
+
+}
+.khfoot{
+    height:30px;
+    text-align:center;
+    margin-bottom:2px;
+    background-color:white;
+    margin-top:4px;
+    padding-top:10px;
+    width:90%;
+    margin-left:5%;
+    margin-right:5%;
+}
+.table{
+    margin-bottom:2px !important;
+}
+.searchbox{
+    margin-right:30px;
+    margin-top:3px;
+    margin-bottom:2px;
+}
+.mytxt{
+    width:50% !important;
+}
+.btnpad{
+    padding-bottom:3px !important;
+}
+.searchshow{
+      margin-right:30px;
+    margin-top:3px;
+    margin-bottom:2px;
+    
+}
+.fcontainer{
+    width:98%;
+    position:absolute;
+    margin-left: 1%;
+    margin-right: 0.78%;
+    height:50%;
+    /*margin-top: 17px;*/
+}
+
+.signoutcss{
+    /*//background: #ffcc66 none repeat scroll 0 0;*/
+    height: 50px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 8px;
+    min-height: 30px;
+    padding-top: 12px;
+    width: 80%;
+}
+.myad{
+    padding-left:5px !important;
+    padding-right:2px !important;
+}
+.Fmatlab{
+  
+    height:330px;
+    background-color:#ffffe2;
+    min-height:330px;
+     margin-top:2px;
+     width:68.77% !important;
+       border: 2px solid #8289A4;
+    -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+    border-radius: 4px;
+      padding-left:5px !important;
+    padding-right:5px !important;
+    font-family:"NAZANINB",Arial;
+    font-size:13pt;
+}
+.myading{
+    height:631px;
+    min-height:631px;
+    border:1px solid red;
+    margin-right:2px;
+     border: 2px solid #997a3d;
+   -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+.fmyser{
+   height:300px;
+    min-height:300px;
+      border: 2px solid #997A3D;
+    -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+    border-radius: 4px;
+    padding-left:5px !important;
+    padding-right:5px !important;
+    font-family:"NAZANINB",Arial;
+    background-color:#ffffe2;
+    width:70% !important;
+    margin-right:15%;
+    margin-left:15%;
+}
+.mysearch{
+    height:140px;
+    min-height:140px;
+    background-color:#ffffe2;
+    font-family: "NAZANINB";
+    font-size: 13pt;
+    border-bottom:2px solid #8289a4;
+}
+.myabout{
+    height:300px;
+    min-height:300px; 
+    margin-top:2px !important;
+       border: 2px solid #997A3D;
+    -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+    border-radius: 4px;
+     padding-left:5px !important;
+    padding-right:5px !important;
+    font-family:"NAZANINB",Arial;
+}
+.containheader{
+    padding-left:5px !important;
+    padding-right:2px !important;
+}
+.fmyservice{
+   
+    height:300px;
+    min-height:300px;
+      border: 2px solid #8289a4;
+    -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+    border-radius: 4px;
+    padding-left:5px !important;
+    padding-right:5px !important;
+    font-family:"NAZANINB",Arial;
+    background-color:#ffffe2;
+    width:68.77% !important;
+}
+.mobilefmyservice{
+   
+    height:300px;
+    min-height:300px;
+      border: 2px solid #997A3D;
+    -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+    border-radius: 4px;
+    padding-left:5px !important;
+    padding-right:5px !important;
+    font-family:"NAZANINB",Arial;
+    background-color:#ffffe2;
+}
+.friendlinkcss{
+     font-family: "NAZANINB",Arial;
+    font-size: 12pt;
+    list-style-type:none;
+    width:100%;
+    margin-top: 1px;
+    min-height:30px;
+   text-decoration-style:none;
+}
+.fabout{
+   
+    height:300px;
+    min-height:300px;
+      border: 2px solid #8289A4;
+    -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+    border-radius: 4px;
+      padding-left:5px !important;
+    padding-right:5px !important;
+    font-family:"NAZANINB",Arial;
+    font-size:11pt !important;
+    background-color:#ffffe2;
+    list-style-type:none;
+     text-align: justify;
+     margin-left:2px;
+}
+.titlecss{
+    font-family: "byekan",Arial;
+    font-size: 15pt;
+    background-color:#66ffcc;
+    width:98%;
+    margin-top: 0.5%;
+    height:3%;
+    min-height:3%;
+    /*margin-left:1%;*/
+}
+.serright{
+    width:33%;
+   float:right;
+   font-family:"NAZANINB";
+   font-size:14pt;
+   padding-top:23px;
+}
+.serleft{
+    float:left;
+    font-family:"bzar";
+   font-size:9pt;
+       width:33px;
+       width:67%;
+}
+.centercss{
+     width:50%;
+   float:right;
+   font-family:"NAZANINB";
+   font-size:14pt;
+   padding-top:23px;
+}
+.myleft{
+ width:50%;
+   float:left;
+   font-family:"NAZANINB";
+   font-size:14pt;
+   padding-top:23px;
+}

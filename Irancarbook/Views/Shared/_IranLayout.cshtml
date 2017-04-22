@@ -1,0 +1,170 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap-rtl.min.css" rel="stylesheet" />
+    <script src="~/Scripts/jquery-2.2.0.min.js"></script>
+    <script src="~/Scripts/bootstrap.js"></script>
+    <script src="~/Scripts/bootstrap-rtl.js"></script>
+    <link href="~/Content/IranCarBook.css" rel="stylesheet" />
+</head>
+<body style="background-color:#3592d7">
+    <div style="height:30px;min-height:30px">
+        <nav style="background-color:#101010; min-height: 30px; height: 35px; font-size: 12pt ! important" class="navbar navbar-default lan">
+            <div class="container-fluid text-center" style="width:70%;float:right">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header hidden-lg">
+                    <button aria-expanded="false" data-target="#bs-example-navbar-collapse-1" data-toggle="collapse" class="navbar-toggle collapsed" type="button">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div style="padding-right:-182px;margin-top:-8px" id="bs-example-navbar-collapse-1" class="collapse navbar-collapse">
+                    <ul style="margin-right:-82px" class="nav navbar-nav">
+                        <li><a href="~/Home/AboutUs">خانه</a></li>
+                        <li><a href="~/Home/Register">ثبت نام</a></li>
+                        <li><a href="~/Home/Maghalat">مقالات</a></li>
+                        <li><a href="~//Home/news">اخبار خودرو</a></li>
+                        <li><a href="~/Home/Tarikhche">تاریخچه خودرو</a></li>
+                      
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right"></ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+            <div class="hidden-sm hidden-xs" style="width: 30%; float: left; margin-top: 4px">
+                @{if (!(User.Identity.IsAuthenticated))
+                    {
+                        using (Html.BeginForm("Login", "Home", FormMethod.Post))
+                        {
+                            <style>
+                                .myclass {
+                                    height: 24px;
+                                    border: 1px solid #ccc;
+                                    border-radius: 4px;
+                                    margin-left: 3px;
+                                    width: 34%;
+                                }
+
+                                .mypass {
+                                    margin-right: 8px;
+                                    color: white;
+                                    font-family: 11px;
+                                    width: 34%;
+                                }
+                            </style>
+                            @Html.TextBox("txtname", "", new { @class = "myclass", @placeholder = "ایمیل شما" })
+                            @Html.Password("txtpass", "", new { @class = "myclass ", @placeholder = "رمز عبور" })
+
+                            <button class="btn" style="height: 24px; line-height: 1px" type="submit">ورود</button>
+ 
+                            <script>
+                                $(document).ready(function () {
+                                    $("#txtname").change(function () {
+                                        var DrText = {
+                                            name: $('#txtname').val()
+                                        }
+
+                                        $.ajax({
+                                            url: '/home/checkpassuser',
+                                            type: 'Post',
+                                            data: DrText,
+                                            success: function (data) {
+                                                $("#txtname").css("background-color", "white");
+
+
+                                            },
+                                            error: function () {
+                                                $("#txtname").val("");
+                                                $("#txtname").css("background-color", "red");
+                                                $("#txtname").attr("placeholder", "ایمیل شما اشتباه است");
+                                            }
+                                        });
+                                    });
+                                    $("#txtpass").change(function () {
+                                        var DrText = {
+                                            name: $('#txtname').val(),
+                                            pass: $('#txtpass').val(),
+                                        }
+
+                                        $.ajax({
+                                            url: '/home/checkuserpass',
+                                            type: 'Post',
+                                            data: DrText,
+                                            success: function (data) {
+                                                $("#txtpass").css("background-color", "white");
+                                                $('#btnusersave').removeAttr('disabled');
+
+                                            },
+                                            error: function () {
+                                                $("#txtpass").val("");
+                                                $("#txtpass").css("background-color", "red");
+                                                $("#txtpass").attr("placeholder", "رمز عبور اشتباه است");
+                                            }
+                                        });
+                                    });
+
+                                });
+                            </script>
+
+                        }
+
+                    }
+
+
+                }
+
+
+
+
+            </div>
+        </nav>
+        
+    </div>
+    <img alt="IranCarBook logo" height="120" width="100%" style="margin-top:-10px" src="~/Content/logo.jpg" />
+    <div class="col-lg-12">
+        <div class="col-lg-9">
+            <div class="col-lg-4">
+                <div class="col-lg-12">
+                    <h4 class="widget-title">مقالات</h4>
+                    @Html.Action("MaghalehList", "home")
+                    <h4 class="widget-title">تاریخچه شرکت های خودرو سازی</h4>
+                    @Html.Action("MyCarInfo", "Home")
+                </div>
+            </div>
+            <div class="col-lg-8">
+                @RenderBody()
+            </div>
+        </div>
+        <div class="col-lg-3">
+            <h4 class="widget-title">اخبار خودرو</h4>
+            @Html.Action("Mynews")
+        </div>
+    </div>
+    <div style="background-color:#404040;min-height:200px" class="col-lg-12">
+        <div style="color:white" class="col-lg-5">
+            <div style="width:70%;margin-right:20%;margin-left:10%;margin-top:5px">
+                <h4 class="widget-title">درباره ما</h4>
+                <p>
+                    ایران کار بوک  وظیفه خود می داند با پیشرفت روز افزون تکنولوژی در صنعت خودرو و پیرو آن اشتیاق جوانان و دوست داران خودرو در مدارس فنی و دانشگاه ها پیشرفت و توسعه جوانان را تسهیل ببخشد
+                </p><br />
+                کارشناس مکانیک(مهندس میثم کرمانی):09123497985
+            </div>
+
+        </div>
+        <div style="margin-right:-55px" class="col-lg-7">
+            <div style="color:white;" class="col-lg-6">
+                <h4 class="widget-title">مطالب پربازدید</h4>
+                @Html.Action("MyTopMaghaleh")
+            </div>
+            <div style="color:white;" class="col-lg-6">
+                <h4 class="widget-title">لینک دوستان</h4>
+            </div>
+        </div>
+    </div>
+  
+</body>
+</html>

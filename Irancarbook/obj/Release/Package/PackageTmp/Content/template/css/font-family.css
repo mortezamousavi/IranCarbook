@@ -1,0 +1,11 @@
+/* Main font family */
+body {font-family: 'Segoe UI', Verdana, Arial, Sans-Serif;font-size: 13px;line-height: 20px;}
+
+#sidebar .widget ul.latest-posts li .meta h5, #sidebar .widget ul.latest-comments li .meta h5, #footer .widget ul.latest-posts li .meta h5, #logo h2.site-description, input[type="text"], input[type="password"], input[type="email"], textarea, select, .small-posts ul.latest-posts li .meta h5, .category-title span {
+	font-family: 'Segoe UI', Verdana, Arial, Sans-Serif;
+}
+/* Google font */
+#sidebar .widget .widget-title, #footer .widget .widget-title, .category-post-alt1 .entry-title, #logo h1.site-title, .category-post-alt2 .entry-title, .category-post-alt3 .entry-title, .entry-title, .comments-title, .block-text-left, .block-text-right, .block-text-center, #copyright ul.navigation li, #menu a, .tag-list span, #respond h4, .nivo-caption h3, #filters span, .rating p, .category-title h4 {
+	font-family: 'Oswald', sans-serif;
+	filter:alpha(opacity=100);
+}

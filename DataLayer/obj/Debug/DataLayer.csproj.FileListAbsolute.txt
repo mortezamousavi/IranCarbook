@@ -1,0 +1,12 @@
+E:\Fararayenh\Irancarbook\Irancarbook\DataLayer\bin\Debug\DataLayer.dll.config
+E:\Fararayenh\Irancarbook\Irancarbook\DataLayer\bin\Debug\DataLayer.dll
+E:\Fararayenh\Irancarbook\Irancarbook\DataLayer\bin\Debug\DataLayer.pdb
+E:\Fararayenh\Irancarbook\Irancarbook\DataLayer\bin\Debug\EntityFramework.dll
+E:\Fararayenh\Irancarbook\Irancarbook\DataLayer\bin\Debug\EntityFramework.SqlServer.dll
+E:\Fararayenh\Irancarbook\Irancarbook\DataLayer\bin\Debug\EntityFramework.xml
+E:\Fararayenh\Irancarbook\Irancarbook\DataLayer\bin\Debug\EntityFramework.SqlServer.xml
+E:\Fararayenh\Irancarbook\Irancarbook\DataLayer\obj\Debug\DataLayer.dll
+E:\Fararayenh\Irancarbook\Irancarbook\DataLayer\obj\Debug\DataLayer.pdb
+E:\Fararayenh\Irancarbook\Irancarbook\DataLayer\bin\Debug\EntityFramework.SqlServerCompact.dll
+E:\Fararayenh\Irancarbook\Irancarbook\DataLayer\bin\Debug\System.Data.SqlServerCe.dll
+E:\Fararayenh\Irancarbook\Irancarbook\DataLayer\bin\Debug\EntityFramework.SqlServerCompact.xml

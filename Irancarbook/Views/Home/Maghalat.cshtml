@@ -1,0 +1,58 @@
+﻿
+@{
+    ViewBag.Title = "Maghalat";
+    Layout = "~/Views/Shared/_IranLayout.cshtml";
+}
+
+@using PagedList;
+@using PagedList.Mvc;
+
+<title>مقالات خودرو</title>
+<meta content="اخبار،خودرو،اخبار خودرو،مکانیک خودرو،مکانیک ،مقالات،مقالات خودرو" name="keywords">
+<center>
+    @{
+        IPagedList<DataLayer.Maghaleh> magh = ViewData["myMaghaleh"] as IPagedList<DataLayer.Maghaleh>;
+
+    }
+
+    @foreach (var item in magh)
+    {
+        <article class="category-post-alt2">
+            <center>
+                <a title="@item.Name" href="/home/MaghalehContent/@item.Id"><img alt="@item.Name" src="Content/MaghalehImage/@item.ImageName" style="opacity: 1;"></a>
+            </center>
+
+
+            <div style="text-align:right" class="entry">
+                <h3 class="entry-title">
+                    <a href="/home/MaghalehContent/@item.Id">@item.Name</a>
+                </h3>
+                <ul class="entry-meta">
+                    <li class="posted-date">@item.Tarikh</li>
+                </ul>
+                <div class="entry-content">
+                    @if (item.Content != null)
+                    {
+                        if (item.Content.Length > 451)
+                        {
+                            <p>@item.Content.Substring(0, 450)...</p>
+                        }
+                        else
+                        {
+                            <p>@item.Content</p>
+                        }
+                    }
+
+                    <a class="more-link" title="@item.Name" href="/home/MaghalehContent/@item.Id">ادامه مطلب</a>
+                </div>
+            </div>
+        </article>
+                    <hr />
+    }
+</center>
+<div class="row text-center">
+    @Html.PagedListPager(magh, paged => Url.Action("Maghalat", new { paged }))
+</div>
+
+
+

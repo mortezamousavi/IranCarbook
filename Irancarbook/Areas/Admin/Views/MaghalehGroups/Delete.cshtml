@@ -1,0 +1,30 @@
+﻿@model DataLayer.MaghalehGroup
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Delete</title>
+</head>
+<body>
+    <h3>آیا مطمئن هستید</h3>
+    <div>
+
+        
+    
+        @using (Html.BeginForm()) {
+            @Html.AntiForgeryToken()
+    
+            <div class="form-actions no-color">
+                <input type="submit" value="حذف" class="btn btn-default" /> |
+                @Html.ActionLink("بازگشت", "Index")
+            </div>
+        }
+    </div>
+</body>
+</html>

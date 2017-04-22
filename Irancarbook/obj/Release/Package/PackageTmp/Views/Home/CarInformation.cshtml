@@ -1,0 +1,18 @@
+﻿
+@{
+    IEnumerable<DataLayer.CarInfo> coffee = ViewData["mycar"] as IEnumerable<DataLayer.CarInfo>;
+
+}
+<ul style="list-style:none" class="latest-posts">
+    @foreach (var item in coffee)
+    {
+        <li>
+            @*<a href="#"><img src="/Content/CompanyImage/@item.Image"></a>*@
+            <div class="meta">
+                <h5><a href="/home/Company/@item.Id">@item.Name</a></h5>
+                <small>@item.Tarikh.ToString("dddd dd, MMMM yyyy")</small>
+            </div>
+        </li>
+    }
+
+</ul>

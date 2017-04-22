@@ -1,0 +1,15 @@
+#styleswitcher {
+	background-color: #fff;
+	border: 1px solid #ddd;
+	position: fixed;
+	float: float;
+	left: 0px;
+	top: 35%;
+	padding: 20px;
+	z-index:99999;
+}
+#styleswitcher:hover {
+}
+#styleswitcher a {
+	display: block;
+}

@@ -1,0 +1,10 @@
+/* Main color theme */
+a:hover, a:focus, .block-text-left, .block-text-right, .block-text-center, table#wp-calendar th, .entry-title a:hover, .reply a, #footer .widget ul.latest-posts li .meta h5 a:hover, #copyright ul.navigation li a:hover, #logo h1.site-title span, .dropcap:first-letter, .tab a:hover > i, .category-title h4 {
+	color:#cb383d;
+}
+#sidebar .widget ul.tags li a:hover, .tag-list ul li a:hover, #sidebar .search-form input[type="submit"], table#wp-calendar caption, .hover-image-alt2, .hover-image-alt1, .pagination a:hover, #menu a:hover, #menu li.current-cat > a, #menu li.current_page_item > a, #menu li.current-menu-item > a, #footer .widget ul.tags li a:hover, .button:hover, button:hover, input[type="submit"]:hover, input[type="reset"]:hover, input[type="button"]:hover, .highlight, .nivo-caption p, .nivo-caption ul.entry-meta, #filters span, #menu li.sfHover > a, .rating p, #menu a.current {
+	background-color: #cb383d;
+}
+#footer, #menu, #sidebar .widget .widget-title, #filters .show-category {
+	border-color:#cb383d;
+}

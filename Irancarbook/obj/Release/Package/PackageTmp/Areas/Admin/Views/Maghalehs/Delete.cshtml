@@ -1,0 +1,96 @@
+﻿@model DataLayer.Maghaleh
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Delete</title>
+</head>
+<body>
+    <h3>Are you sure you want to delete this?</h3>
+    <div>
+        <h4>Maghaleh</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.MaghalehGroup.Name)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.MaghalehGroup.Name)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Name)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Name)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.ImageName)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.ImageName)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.FileName)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.FileName)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Content)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Content)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Tarikh)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Tarikh)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.writer)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.writer)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Position)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Position)
+            </dd>
+    
+        </dl>
+    
+        @using (Html.BeginForm()) {
+            @Html.AntiForgeryToken()
+    
+            <div class="form-actions no-color">
+                <input type="submit" value="Delete" class="btn btn-default" /> |
+                @Html.ActionLink("Back to List", "Index")
+            </div>
+        }
+    </div>
+</body>
+</html>

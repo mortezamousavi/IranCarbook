@@ -1,0 +1,60 @@
+﻿@model IEnumerable<DataLayer.Maghaleh>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap-rtl.min.css" rel="stylesheet" />
+    <script src="~/Scripts/jquery-2.2.0.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="~/Scripts/bootstrap-rtl.js"></script>
+</head>
+<body>
+    <p>
+        @Html.ActionLink("مقاله جدید", "Create")
+    </p>
+    <table class="table table-bordered table-condensed">
+        <tr>
+
+            <th>
+              نام
+            </th>
+            <th>
+                تاریخ
+            </th>
+            <th>
+              منبع
+            </th>
+
+            <th></th>
+        </tr>
+    
+    @foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.Tarikh)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.writer)
+            </td>
+            <td>
+                @Html.ActionLink("ویرایش", "Edit", new { id=item.Id }) |
+                @Html.ActionLink("حذف", "Delete", new { id=item.Id })
+            </td>
+        </tr>
+    }
+    
+    </table>
+</body>
+</html>

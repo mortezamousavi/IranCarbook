@@ -1,0 +1,18 @@
+﻿
+@{
+    IEnumerable<DataLayer.news> cof = ViewData["Mynews"] as IEnumerable<DataLayer.news>;
+
+}
+<ul style="list-style:none" class="latest-posts">
+    @foreach (var item in cof)
+    {
+        <li>
+            @*<a href="#"><img src="/Content/CompanyImage/@item.Image"></a>*@
+            <div class="meta">
+                <h5><a href="/home/newscontent/@item.newsId">@item.Name</a></h5>
+                <small>@item.Tarikh.ToString("dddd dd, MMMM yyyy")</small>
+            </div>
+        </li>
+    }
+
+</ul>

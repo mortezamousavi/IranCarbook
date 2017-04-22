@@ -1,0 +1,13 @@
+﻿
+@{
+    IEnumerable<DataLayer.MaghalehGroup> teachers = ViewData["DataList"] as IEnumerable<DataLayer.MaghalehGroup>;
+
+}
+
+<ul style="list-style:none" class="category">
+    @foreach (var item in teachers)
+    {
+        <li><a title="@item.Name" href="#">@item.Name</a></li>
+    }
+    
+</ul>

@@ -1,0 +1,15 @@
+﻿
+@{
+    IEnumerable<DataLayer.Maghaleh> tea = ViewData["LastMatlab"] as IEnumerable<DataLayer.Maghaleh>;
+
+}
+<ul class="latest-posts">
+    @foreach (var item in tea)
+    {
+        <li>
+     
+                <h5><a style="color:white" href="/home/MaghalehContent/@item.Id">@item.Name</a></h5>
+        </li>
+    }
+    
+</ul>

@@ -1,0 +1,68 @@
+﻿@font-face {
+  font-family: 'btitr';
+  src: url('/fonts/BTitrBold.eot?#') format('eot'),  /* IE6–8 */
+       url('/fonts/BTitrBold.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+       url('/fonts/BTitrBold.ttf') format('truetype');  /* Saf3—5, Chrome4+, FF3.5, Opera 10+ */
+}
+@font-face {
+  font-family: 'btraffic';
+  src: url('/fonts/BTraffic.eot?#') format('eot'),  /* IE6–8 */
+       url('/fonts/BTraffic.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+       url('/fonts/BTraffic.ttf') format('truetype');  /* Saf3—5, Chrome4+, FF3.5, Opera 10+ */
+}
+
+
+
+
+@font-face {
+    font-family: 'b_trafficregular';
+    src: url('/fonts/btraffic-webfont.eot');
+    src: url('/fonts/btraffic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/btraffic-webfont.woff2') format('woff2'),
+         url('/fonts/btraffic-webfont.woff') format('woff'),
+         url('/fonts/btraffic-webfont.ttf') format('truetype'),
+         url('/fonts/btraffic-webfont.svg#b_trafficregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+  font-family: 'bkodak';
+  src: url('/fonts/BKoodakBold.eot?#') format('eot'),  /* IE6–8 */
+       url('/fonts/BKoodakBold.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+       url('/fonts/BKoodakBold.ttf') format('truetype');  /* Saf3—5, Chrome4+, FF3.5, Opera 10+ */
+}
+@font-face {
+	font-family: 'NAZANINB';
+	src: url('/fonts/Nazanin.eot');
+	src: local('☺'), url('/fonts/Nazanin.woff') format('woff'), url('/fonts/Nazanin.ttf') format('truetype'), url('/fonts/Nazanin.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+  font-family: 'bzar';
+  src: url('/fonts/BZar.eot?#') format('eot'),  /* IE6–8 */
+       url('/fonts/BZar.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+       url('/fonts/BZar.ttf') format('truetype');  /* Saf3—5, Chrome4+, FF3.5, Opera 10+ */
+}
+@font-face {
+  font-family: 'byekan';
+  src: url('/fonts/BYekan.eot?#') format('eot'),  /* IE6–8 */
+       url('/fonts/BYekan.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+       url('/fonts/BYekan.ttf') format('truetype');  /* Saf3—5, Chrome4+, FF3.5, Opera 10+ */
+}
+
+.site-title{
+  font-family:"bzar",Arial !important;
+}
+body {
+
+    font-family:"NAZANINB",Arial !important;
+}
+.mytitle{
+font-family:"btraffic",Arial !important;
+}
+.entry-title{
+font-family:"byekan",Tahoma !important;
+}

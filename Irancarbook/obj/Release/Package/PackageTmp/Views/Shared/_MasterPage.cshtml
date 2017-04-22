@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Bitter:400,700,400italic">
+    <link href="~/Content/template/css/boxed-layout.css" rel="stylesheet" />
+    <link href="~/Content/template/css/colors.css" rel="stylesheet" />
+    <link href="~/Content/template/css/font-family.css" rel="stylesheet" />
+    <link href="~/Content/template/css/grid.css" rel="stylesheet" />
+    <link href="~/Content/template/css/icons.css" rel="stylesheet" />
+    <link href="~/Content/template/css/style.css" rel="stylesheet" />
+    <link href="~/Content/template/css/styleswitcher.css" rel="stylesheet" />
+    <link href="~/Content/template/css/wide-layout.css" rel="stylesheet" />
+    <link href="~/Content/MyFont.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="site-layout active">
+        <div id="styleswitcher" class="active">
+            </div>
+            <div class="container">
+                <ul class="top-menu">
+                    <li style="float:right"><a href="/home/index">خانه</a></li>
+                    <li style="float:right"><a href="/home/register">ثبت نام</a></li>
+                    <li style="float:right"><a href="/home/login">ورود</a></li>
+                </ul>
+                <div id="header">
+                    <div style="text-align:right" class="banner-top">
+                        <h1 class="site-title"><a href="home/index">ایران کار بوک</a></h1>
+                        <h2 class="site-description">وبسایت جامع اطلاعات مکانیک خودرو ایران</h2>
+                    </div>
+                    <div id="logo">
+
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div id="primary-left" class="active">
+                    @RenderBody()
+                </div>
+                <div id="sidebar">
+                    <!-- Search widget -->
+                    <aside class="widget">
+                        <form class="search-form">
+                            <input type="text" placeholder="جستجو...">
+                            <input type="submit">
+                        </form>
+                    </aside>
+                    <!-- Category widget -->
+                    <aside style="text-align:right" class="widget">
+                        <h4 class="widget-title">مقالات</h4>
+                        @Html.Action("MaghalehList","home")                  
+                    </aside>
+                    <aside style="text-align:right" class="widget">
+                        <h4 class="widget-title">تاریخچه شرکت های خودرو سازی</h4>
+                        @Html.Action("MyCarInfo","Home")
+                    </aside>
+                    
+                    <!-- Banner widget -->
+                    <aside style="text-align:right" class="widget">                       
+                        <h4 class="widget-title">پر بازدید ترین مقالات</h4>
+                        @Html.Action("maghalehPosition", "Home")
+                    </aside>
+                </div>
+            </div>
+            <div id="footer">
+                <div class="container">
+                    <aside style="float:right;text-align:justify;direction:rtl" class="widget">
+                        <p>درباره ما</p>
+                        <p> ایران کار بوک  وظیفه خود می داند با پیشرفت روز افزون تکنولوژی در صنعت خودرو و پیرو آن اشتیاق جوانان و دوست داران خودرو در مدارس فنی و دانشگاه ها پیشرفت و توسعه جوانان را تسهیل ببخشد </p>
+                    </aside>
+                    <aside class="widget">
+                        <h4 class="widget-title">لینک دوستان</h4>
+                        <div class="sponsored-links">
+                            <div><a href="http://www.harajibook.ir">فروش کتاب های دسته دوم</a></div>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </div>
+       
+</body>
+</html>

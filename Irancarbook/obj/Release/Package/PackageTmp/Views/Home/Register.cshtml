@@ -1,0 +1,30 @@
+﻿@model DataLayer.dbUser
+
+@{
+    ViewBag.Title = "Register";
+    Layout = "~/Views/Shared/_IranLayout.cshtml";
+}
+<title>ثبت نام</title>
+
+@using (Html.BeginForm("SaveUser", "Home", FormMethod.Post))
+{
+    <div style="float:right;width:100%;text-align: right; direction: rtl;" class="form-group">
+        <label for="exampleInputEmail1">نام شما</label>
+        @Html.TextBoxFor(w => w.name, new { @class = "form-control" })
+    </div>
+    <div style="float:right;width:100%;text-align: right; direction: rtl;" class="form-group">
+        <label for="exampleInputEmail1">ایمیل شما</label>
+        @Html.TextBoxFor(w => w.mail, new { @class = "form-control" })
+    </div>
+    <div style="float:right;width:100%;text-align: right; direction: rtl;" class="form-group">
+        <label for="exampleInputEmail1">کلمه عبور</label>
+        @Html.PasswordFor(w => w.pass, new { @class = "form-control" })
+    </div>
+    <div style="float:right;width:100%;text-align: right; direction: rtl;" class="form-group">
+        <label for="exampleInputEmail1">تکرار کلمه عبور</label>
+        @Html.PasswordFor(w => w.repass, new { @class = "form-control" })
+    </div>
+    <button type="submit" style="float:right;width:14%;text-align: center; direction: rtl;" class="btn btn-success" value="ثبت نام">ثبت نام</button>
+
+}
+
